@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/leftDashedLine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dashed_bitmap"
+            app:layout_widthPercent="45%" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_toRightOf="@id/leftDashedLine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="588人在讨论ssssss"
+            app:layout_widthPercent="10%" />
+
+        <ImageView
+            android:layout_toRightOf="@id/text"
+            android:id="@+id/rightDashedLine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dashed_bitmap"
+            app:layout_widthPercent="45%" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>
